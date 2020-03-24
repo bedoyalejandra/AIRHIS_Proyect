@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:layout_gravity="center"
+    tools:context=".CreateCount">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"></ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_margin="40dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREAR CUENTA"
+                android:textColor="#08a7bc"
+                android:fontFamily="@font/avenirnextcondensed_demibold"
+                android:textSize="40dp"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Nombres"
+                android:id="@+id/name" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Apellidos"
+                android:id="@+id/lastName" />
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Correo"
+                android:id="@+id/email" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Contraseña"
+                android:id="@+id/password" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:hint="Confirmar Contraseña"
+                android:id="@+id/confirmPassword" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirnextcondensed"
+                android:textColor="#d10000"
+                android:textSize="20dp"
+                android:id="@+id/tv"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnCreate"
+                android:background="@drawable/checkin"></ImageView>
+        </LinearLayout>
+
+</RelativeLayout>
