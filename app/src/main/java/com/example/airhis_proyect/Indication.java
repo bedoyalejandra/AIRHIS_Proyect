@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Indication extends AppCompatActivity {
 
     ImageView btnInit;
+    int option;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,8 @@ public class Indication extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i= new Intent(getApplicationContext(), Maps.class);
+                option = 1;
+                i.putExtra("Option", option);
                 startActivity(i);
             }
         });

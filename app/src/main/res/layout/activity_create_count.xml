@@ -30,7 +30,7 @@
                 android:textSize="40dp"/>
 
             <EditText
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:hint="Nombres"
@@ -38,14 +38,14 @@
 
             <EditText
                 android:layout_marginTop="10dp"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Apellidos"
                 android:id="@+id/lastName" />
 
             <EditText
                 android:layout_marginTop="10dp"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Correo"
                 android:id="@+id/email" />
@@ -53,7 +53,7 @@
             <EditText
                 android:inputType="textPassword"
                 android:layout_marginTop="10dp"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Contraseña"
                 android:id="@+id/password" />
@@ -61,7 +61,7 @@
             <EditText
                 android:inputType="textPassword"
                 android:layout_marginTop="10dp"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Confirmar Contraseña"
                 android:id="@+id/confirmPassword" />
@@ -75,7 +75,7 @@
                 android:id="@+id/tv"/>
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:id="@+id/btnCreate"

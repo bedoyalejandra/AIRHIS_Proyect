@@ -11,6 +11,7 @@ public class Menu extends AppCompatActivity {
     ImageView btnMaps;
     ImageView btnInt;
     ImageView btnindications;
+    int option;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class Menu extends AppCompatActivity {
         btnInt =  findViewById(R.id.btnInt);
         btnindications =  findViewById(R.id.btnindications);
 
+
         btnMaps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,13 +31,21 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+
+
         btnInt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(getApplicationContext(), Interpolation.class);
+                Intent i= new Intent(getApplicationContext(), Maps.class);
+                option = 0;
+                i.putExtra("Option", option);
                 startActivity(i);
             }
         });
+
+
+
+
 
         btnindications.setOnClickListener(new View.OnClickListener() {
             @Override

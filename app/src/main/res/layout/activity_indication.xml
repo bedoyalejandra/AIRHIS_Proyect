@@ -12,38 +12,48 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_margin="20dp"
         android:gravity="center_horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:text="INSTRUCCIONES"
+            android:textColor="#08a7bc"
+            android:fontFamily="@font/avenirnextcondensed_demibold"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/avenirnextcondensed"
+            android:textAlignment="center"
             android:text="Escoge cualquier punto en el mapa y descubre como se encuentra la calidad del aire en ese lugar."
             android:textColor="#000000"
-            android:textSize="25dp" />
+            android:textSize="23dp" />
+
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:gravity="center">
+
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="100dp"
-                android:background="@drawable/select"/>
+                android:background="@drawable/select" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Presiona durante un segundo para poner una marca"
+                android:text="Presiona durante un segundo para poner una marca."
                 android:fontFamily="@font/avenirnextcondensed"
                 android:textColor="#000000"
-                android:textSize="25dp"/>
+                android:textSize="23dp"/>
 
         </LinearLayout>
 
@@ -52,7 +62,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="20dp">
 
             <ImageView
                 android:layout_width="150dp"
@@ -62,11 +72,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="Selecciona la marca para obtener más información"
+                android:text="Selecciona la marca para obtener más información."
                 android:fontFamily="@font/avenirnextcondensed"
                 android:textColor="#000000"
-                android:textSize="25dp"/>
+                android:textSize="23dp"/>
 
         </LinearLayout>
 
@@ -74,7 +83,7 @@
             android:id="@+id/btnInit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:background="@drawable/initn"></ImageView>
     </LinearLayout>
 

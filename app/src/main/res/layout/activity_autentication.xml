@@ -32,7 +32,7 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_marginTop="40dp"
             android:hint="Usuario"
             android:id="@+id/txtUser" />
@@ -41,7 +41,7 @@
             android:inputType="textPassword"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:hint="Contraseña"
             android:id="@+id/txtPassword" />
 
