@@ -48,14 +48,6 @@ public class Autentication extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUI(currentUser);
-    }
-
 
     private void updateUI(FirebaseUser user) {
         BreakIterator textSignInStatus = null;
