@@ -322,6 +322,98 @@ public class Maps extends FragmentActivity implements OnMapReadyCallback {
         }
         return values;
     }
+
+    private int[] colorRsl(double f){
+        int[] values = new int[4];
+        //alfa
+        values[0] = 100;
+
+        //Verde
+        if(f < 16.67){
+            values[1] = 57;
+            values[2] = 127;
+            values[3] = 19;
+        }else if(f >= 16.67 && f < 33.33){
+            values[1] = 82;
+            values[2] = 153;
+            values[3] = 52;
+        }else if(f >= 33.33 && f < 50.0){
+            values[1] = 134;
+            values[2] = 176;
+            values[3] = 36;
+
+            //Amarillo
+        }else if(f >= 50.0 && f < 66.67){
+            values[1] = 206;
+            values[2] = 207;
+            values[3] = 14;
+        }else if(f >= 66.67 && f < 83.34){
+            values[1] = 252;
+            values[2] = 227;
+            values[3] = 0;
+        }else if(f >= 83.34 && f < 100.0){
+            values[1] = 251;
+            values[2] = 193;
+            values[3] = 14;
+
+            //Naranja
+        }else if(f >= 100.0 && f < 116.67){
+            values[1] = 250;
+            values[2] = 163;
+            values[3] = 26;
+        }else if(f >= 116.67 && f < 133.34){
+            values[1] = 249;
+            values[2] = 133;
+            values[3] = 38;
+        }else if(f >= 133.34 && f < 150.0){
+            values[1] = 255;
+            values[2] = 102;
+            values[3] = 26;
+
+            //Rojo
+        }else if(f >= 150.0 && f < 166.67){
+            values[1] = 230;
+            values[2] = 80;
+            values[3] = 45;
+        }else if(f >= 166.67 && f < 183.34){
+            values[1] = 219;
+            values[2] = 49;
+            values[3] = 49;
+        }else if(f >= 183.34 && f < 200.0){
+            values[1] = 173;
+            values[2] = 52;
+            values[3] = 70;
+
+            //Morado
+        }else if(f >= 200.0 && f < 233.33){
+            values[1] = 138;
+            values[2] = 55;
+            values[3] = 142;
+        }else if(f >= 233.33 && f < 266.66){
+            values[1] = 107;
+            values[2] = 57;
+            values[3] = 178;
+        }else if(f >= 266.66 && f < 300.0){
+            values[1] = 88;
+            values[2] = 36;
+            values[3] = 133;
+
+            //Marrón
+        }else if(f >= 300.0 && f < 366.67){
+            values[1] = 84;
+            values[2] = 21;
+            values[3] = 90;
+        }else if(f >= 366.67 && f < 433.34){
+            values[1] = 79;
+            values[2] = 2;
+            values[3] = 38;
+        }else{
+            values[1] = 51;
+            values[2] = 0;
+            values[3] = 26;
+        }
+        return values;
+    }
     
 
     private void addHeatMap() {

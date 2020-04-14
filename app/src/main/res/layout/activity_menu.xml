@@ -24,12 +24,10 @@
             tools:ignore="MissingConstraints">
 
             <ImageView
-                android:id="@+id/btnInt"
+                android:id="@+id/btnindications"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:saveEnabled="false"
-                android:background="@drawable/btnmapa"
-                tools:ignore="MissingConstraints"></ImageView>
+                android:background="@drawable/indicaciones"></ImageView>
 
             <ImageView
                 android:id="@+id/btnMaps"
@@ -39,11 +37,13 @@
                 android:background="@drawable/point"></ImageView>
 
             <ImageView
-                android:id="@+id/btnindications"
+                android:id="@+id/btnInt"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/indicaciones"></ImageView>
+                android:saveEnabled="false"
+                android:background="@drawable/btnmapa"
+                tools:ignore="MissingConstraints"></ImageView>
         </LinearLayout>
 
 

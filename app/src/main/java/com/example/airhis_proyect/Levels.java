@@ -50,6 +50,22 @@ public class Levels extends AppCompatActivity {
         }
     }
 
+    private int intervalRsl(double f){
+        if(f < 50.0){
+            return 1;
+        }else if(f >= 50.0 && f < 100.0){
+            return 2;
+        }else if(f >= 100.0 && f < 150.0){
+            return 3;
+        }else if(f >= 150.0 && f < 200.0){
+            return 4;
+        }else if(f >= 200.0 && f < 300.0){
+            return 5;
+        }else{
+            return 6;
+        }
+    }
+
     private double function(double la, double lo){
         DecimalFormat df = new DecimalFormat("#.00");
         return Double.parseDouble(df.format(m.function(la,lo)));
