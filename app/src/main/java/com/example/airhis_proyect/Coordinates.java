@@ -13,13 +13,6 @@ public class Coordinates {
         calculate();
     }
 
-    public int getXScaling() {
-        return x;
-    }
-
-    public int getYScaling() {
-        return y;
-    }
 
     public int getX() {
         return x;
@@ -66,27 +59,6 @@ public class Coordinates {
         double alpha3 = Math.pow(alpha, 3);
         double gamma = alpha3 * 1.296296296;
         double b0 = 0.9996 * c * (radLat - (alpha * J2) + (beta * J4) - (gamma * J0));
-/*
-        System.out.println("Huso: " + huso);
-            System.out.println("radLat: " + radLat);
-            System.out.println("delthaAlpha: " + delthaAlpha);
-            System.out.println("A: " + A);
-            System.out.println("xi: " + xi);
-            System.out.println("n: " + n);
-            System.out.println("v: " + v);
-            System.out.println("zeta: " + zeta);
-            System.out.println("A1: " + A1);
-            System.out.println("A2: " + A2);
-            System.out.println("J2: " + J2);
-            System.out.println("J4: " + J4);
-            System.out.println("J0: " + J0);
-            System.out.println("alpha: " + alpha);
-            System.out.println("beta: " + beta);
-            System.out.println("gamma: " + gamma);
-            System.out.println("b0: " + b0);
-
-
-*/
 
         x = (int)((xi * v * (1 + (zeta/3))) + 500000);
         y = (int) (n * v * (1 + zeta) + b0);

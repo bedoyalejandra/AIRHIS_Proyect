@@ -45,7 +45,7 @@ public class Matrix {
         fillValues();
         fillMatrix();
         matrixInterpolation();
-        fuctionMatrix();
+        //fuctionMatrix();
 
     }
 

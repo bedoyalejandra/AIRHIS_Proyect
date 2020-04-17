@@ -13,6 +13,8 @@
 
 
     <application
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="AIRHIS"
@@ -20,7 +22,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity android:name=".Indication"></activity>
-        <activity android:name=".Interpolation" />
         <activity android:name=".Indications" />
         <activity android:name=".Menu" />
         <!--

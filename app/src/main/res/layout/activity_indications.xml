@@ -15,8 +15,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
             android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿QUÉ ES AIRHIS?"
+                android:fontFamily="@font/avenirnextcondensed_demibold"
+                android:textColor="#08a7bc"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AIRHIS es una solución tecnológica que permite visualizar la calidad del aire (en un mapa de visualización por sectores y de forma calculada en el sitio elegido por el usuario) en la Ciudad de Medellín a partir de DATOS e INFORMACIÓN suministrada por el Sistema de Alerta Temprana del Valle de Aburra – SIATA. Esta aplicación es una herramienta que cumple una función preventiva y educativa sobre la calidad del aire y sus efectos sobre la salud humana."
+                android:fontFamily="@font/avenirnextcondensed"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="25dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -24,6 +41,7 @@
                 android:text="SIMBOLOS"
                 android:fontFamily="@font/avenirnextcondensed_demibold"
                 android:textColor="#08a7bc"
+                android:layout_marginTop="20dp"
                 android:textSize="40dp"/>
 
             <LinearLayout
