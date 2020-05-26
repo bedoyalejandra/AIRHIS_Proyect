@@ -6,20 +6,147 @@
     android:layout_height="match_parent"
     tools:context=".Levels">
 
-    <ImageView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/buena"
-        android:id="@+id/img"/>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="132dp"
-        android:fontFamily="@font/avenirnextcondensed_demibold"
-        android:textSize="30dp"
-        android:id="@+id/tv"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="107dp"
+                android:fontFamily="@font/avenirnextcondensed_demibold"
+                android:text="AIRHIS"
+                android:textColor="#08a7bc"
+                android:textSize="75dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:fontFamily="@font/avenirnextcondensed_demibold"
+                android:text="ICA"
+                android:textColor="#a2181a"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:fontFamily="@font/avenirnextcondensed"
+                android:text="Índice de calidad del aire"
+                android:textColor="#a2181a"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/avenirnextcondensed_demibold"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:text="12"
+                android:id="@+id/tv"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/bar"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/avenirnextcondensed"
+                android:textSize="25dp"
+                android:textColor="#000"
+                android:id="@+id/text"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/avenirnextcondensed"
+                    android:textSize="25dp"
+                    android:textColor="#ff0006"
+                    android:text="Recomendaciones"/>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ancianos"
+                        android:layout_margin="3dp"
+                        android:id="@+id/s1"></ImageView>
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ancianos"
+                        android:layout_margin="3dp"
+                        android:id="@+id/s2"></ImageView>
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ancianos"
+                        android:layout_margin="3dp"
+                        android:id="@+id/s3"></ImageView>
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ancianos"
+                        android:layout_margin="3dp"
+                        android:id="@+id/s4"></ImageView>
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ancianos"
+                        android:layout_margin="3dp"
+                        android:id="@+id/s5"></ImageView>
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ancianos"
+                        android:layout_margin="3dp"
+                        android:id="@+id/s6"></ImageView>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </RelativeLayout>

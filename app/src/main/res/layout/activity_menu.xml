@@ -30,13 +30,6 @@
                 android:background="@drawable/indicaciones"></ImageView>
 
             <ImageView
-                android:id="@+id/btnMaps"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/point"></ImageView>
-
-            <ImageView
                 android:id="@+id/btnInt"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
@@ -44,6 +37,15 @@
                 android:saveEnabled="false"
                 android:background="@drawable/btnmapa"
                 tools:ignore="MissingConstraints"></ImageView>
+
+            <ImageView
+                android:id="@+id/btnMaps"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/point"></ImageView>
+
+
         </LinearLayout>
 
 

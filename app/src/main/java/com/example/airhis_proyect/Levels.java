@@ -13,19 +13,30 @@ import java.text.DecimalFormat;
 
 public class Levels extends AppCompatActivity {
 
-    ImageView img;
+    ImageView bar;
     TextView tv;
+    TextView text;
+
+    ImageView s1;
+    ImageView s2;
+    ImageView s3;
+    ImageView s4;
+    ImageView s5;
+    ImageView s6;
+
     double lat;
     double lon;
     Matrix m;
     double value;
 
+    ICA ica;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_levels);
-        img = findViewById(R.id.img);
-        tv = findViewById(R.id.tv);
+        initComponents();
+        ica = new ICA();
         m = new Matrix();
         lat = (Double) getIntent().getSerializableExtra("Latitud");
         lon = (Double)getIntent().getSerializableExtra("Longitud");
@@ -72,33 +83,107 @@ public class Levels extends AppCompatActivity {
     }
 
     private void level(int n){
-        tv.setText(value + "");
-        Bitmap imgTem;
+        DecimalFormat df = new DecimalFormat("#.00");
+        double ic = ica.calculateIca(value);
+        double number = Double.parseDouble(df.format(ic));
+        tv.setText(number + "");
+
         if(n == 1){
-            imgTem = BitmapFactory.decodeResource(getResources(), R.drawable.buena);
-            img.setImageBitmap(imgTem);
+            images(R.drawable.bbuena, 0, 0, 0, 0, 0, 0);
             tv.setTextColor(Color.parseColor("#529934"));
+            text.setText("La calidad del aire es buena, no existe ningún riesgo para la salud.");
 
         }else if(n == 2){
-            imgTem = BitmapFactory.decodeResource(getResources(), R.drawable.moderada);
-            img.setImageBitmap(imgTem);
+            images(R.drawable.bmoderada, 1, 1, 0, 0, 0, 0);
             tv.setTextColor(Color.parseColor("#d3c302"));
+            text.setText("La calidad del aire es moderada y existe poco o ningún riesgo para la salud.");
+
 
         }else if(n == 3){
-            imgTem = BitmapFactory.decodeResource(getResources(), R.drawable.daninagrupos);
-            img.setImageBitmap(imgTem);
+            images(R.drawable.bdaninagrupos, 1, 1, 1, 1, 1, 0);
             tv.setTextColor(Color.parseColor("#F28420"));
+            text.setText("La calidad del aire es dañina y exite un alto riesgo para la salud de grupos sensibles. \n Se recomienda el uso de tapabocas y no realizar actividades al aire libre.");
+
 
         }else if(n == 4){
-            imgTem = BitmapFactory.decodeResource(getResources(), R.drawable.danina);
-            img.setImageBitmap(imgTem);
+            images(R.drawable.bdanina, 1, 1, 1, 1, 1, 1);
             tv.setTextColor(Color.parseColor("#CC3A36"));
+            text.setText("La calidad del aire es dañina y exite un alto riesgo para la salud. \n Se recomienda el uso de tapabocas y no realizar actividades al aire libre.");
 
         }else if(n == 5){
-            imgTem = BitmapFactory.decodeResource(getResources(), R.drawable.muydanina);
-            img.setImageBitmap(imgTem);
+            images(R.drawable.bmuydanina, 1, 1, 1, 1, 1, 1);
             tv.setTextColor(Color.parseColor("#5E3AC1"));
+            text.setText("La calidad del aire es muy dañina y exite un alto riesgo para la salud. \n Se recomienda el uso de tapabocas y no realizar ningún tipo de actividad al aire libre.");
 
         }
+    }
+
+    private void images(int a1, int a2, int a3, int a4, int a5, int a6, int a7){
+
+        if(a2 == 0){
+            a2 = R.drawable.respiratoria;
+        }else {
+            a2 = R.drawable.prespiratoria;
+        }
+
+        if(a3 == 0){
+            a3 = R.drawable.cardiaca;
+        }else {
+            a3 = R.drawable.pcardiaca;
+        }
+
+        if(a4 == 0){
+            a4 = R.drawable.ancianos;
+        }else {
+            a4 = R.drawable.pancianos;
+        }
+
+        if(a5 == 0){
+            a5 = R.drawable.actividad;
+        }else {
+            a5 = R.drawable.pactividad;
+        }
+
+        if(a6 == 0){
+            a6 = R.drawable.ninos;
+        }else {
+            a6 = R.drawable.pninos;
+        }
+
+        if(a7 == 0){
+            a7 = R.drawable.adulto;
+        }else {
+            a7 = R.drawable.padultos;
+        }
+
+        Bitmap img1 = BitmapFactory.decodeResource(getResources(), a1);
+        Bitmap img2 = BitmapFactory.decodeResource(getResources(), a2);
+        Bitmap img3 = BitmapFactory.decodeResource(getResources(), a3);
+        Bitmap img4 = BitmapFactory.decodeResource(getResources(), a4);
+        Bitmap img5 = BitmapFactory.decodeResource(getResources(), a5);
+        Bitmap img6 = BitmapFactory.decodeResource(getResources(), a6);
+        Bitmap img7 = BitmapFactory.decodeResource(getResources(), a7);
+
+        bar.setImageBitmap(img1);
+
+        s1.setImageBitmap(img2);
+        s2.setImageBitmap(img3);
+        s3.setImageBitmap(img4);
+        s4.setImageBitmap(img5);
+        s5.setImageBitmap(img6);
+        s6.setImageBitmap(img7);
+
+    }
+
+    private void initComponents(){
+        tv = findViewById(R.id.tv);
+        bar = findViewById(R.id.bar);
+        text = findViewById(R.id.text);
+        s1 = findViewById(R.id.s1);
+        s2 = findViewById(R.id.s2);
+        s3 = findViewById(R.id.s3);
+        s4 = findViewById(R.id.s4);
+        s5 = findViewById(R.id.s5);
+        s6 = findViewById(R.id.s6);
     }
 }
