@@ -14,35 +14,36 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_margin="10dp"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/avenirnextcondensed_demibold"
                 android:text="¿QUÉ ES AIRHIS?"
-                android:fontFamily="@font/avenirnextcondensed_demibold"
                 android:textColor="#08a7bc"
-                android:textSize="40dp"/>
+                android:textSize="40dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="AIRHIS es una solución tecnológica que permite identificar la calidad del aire (en un mapa de visualización por sectores y en el sitio elegido por el usuario) en la ciudad de Medellín a partir de DATOS e INFORMACIÓN suministrada por el Sistema de Alerta Temprana del Valle de Aburra – SIATA. Esta aplicación es una herramienta que cumple una función preventiva y educativa sobre la calidad del aire y sus efectos sobre la salud humana."
                 android:fontFamily="@font/avenirnextcondensed"
+                android:text="AIRHIS es una solución tecnológica que permite identificar la calidad del aire (en un mapa de visualización por sectores y en el sitio elegido por el usuario) en la ciudad de Medellín a partir de DATOS e INFORMACIÓN suministrada por el Sistema de Alerta Temprana del Valle de Aburra – SIATA. Esta aplicación es una herramienta que cumple una función preventiva y educativa sobre la calidad del aire y sus efectos sobre la salud humana."
                 android:textAlignment="center"
+                android:layout_margin="20dp"
                 android:textColor="#000000"
-                android:textSize="25dp"/>
+                android:textSize="25dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/avenirnextcondensed_demibold"
                 android:text="SIMBOLOS"
-                android:fontFamily="@font/avenirnextcondensed_demibold"
                 android:textColor="#08a7bc"
-                android:layout_marginTop="20dp"
-                android:textSize="40dp"/>
+                android:textSize="40dp" />
 
             <LinearLayout
                 android:layout_width="330dp"
@@ -52,22 +53,22 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/respiratoria"/>
+                        android:background="@drawable/respiratoria" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/avenirnextcondensed"
                         android:text="Enfermedades respiratorias"
-                        android:fontFamily="@font/avenirnextcondensed"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
 
@@ -75,22 +76,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/cardiaca"/>
+                        android:background="@drawable/cardiaca" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/avenirnextcondensed"
                         android:text="Enfermedades cardiacas"
-                        android:fontFamily="@font/avenirnextcondensed"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
 
@@ -98,22 +99,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/actividad"/>
+                        android:background="@drawable/actividad" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/avenirnextcondensed"
                         android:text="Actividades al aire libre"
-                        android:fontFamily="@font/avenirnextcondensed"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
 
@@ -121,22 +122,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/ancianos"/>
+                        android:background="@drawable/ancianos" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/avenirnextcondensed"
                         android:text="Ancianos"
-                        android:fontFamily="@font/avenirnextcondensed"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
 
@@ -144,22 +145,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/adulto"/>
+                        android:background="@drawable/adulto" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/avenirnextcondensed"
                         android:text="Adultos"
-                        android:fontFamily="@font/avenirnextcondensed"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
 
@@ -167,22 +168,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/ninos"/>
+                        android:background="@drawable/ninos" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="Niños"
                         android:fontFamily="@font/avenirnextcondensed"
+                        android:text="Niños"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -191,11 +192,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="COLORES"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/avenirnextcondensed_demibold"
+                android:text="COLORES"
                 android:textColor="#08a7bc"
-                android:textSize="40dp"/>
+                android:textSize="40dp" />
 
             <LinearLayout
                 android:layout_width="330dp"
@@ -205,22 +206,22 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/verde"/>
+                        android:background="@drawable/verde" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/avenirnextcondensed"
                         android:text="Buena"
-                        android:fontFamily="@font/avenirnextcondensed"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
 
@@ -228,22 +229,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/amarillo"/>
+                        android:background="@drawable/amarillo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/avenirnextcondensed"
                         android:text="Moderada"
-                        android:fontFamily="@font/avenirnextcondensed"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
 
@@ -251,22 +252,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/naranja"/>
+                        android:background="@drawable/naranja" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/avenirnextcondensed"
                         android:text="Dañina para grupos sensibles"
-                        android:fontFamily="@font/avenirnextcondensed"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
 
@@ -274,22 +275,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/rojo"/>
+                        android:background="@drawable/rojo" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/avenirnextcondensed"
                         android:text="Dañina"
-                        android:fontFamily="@font/avenirnextcondensed"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
 
@@ -297,33 +298,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:background="@drawable/morado"/>
+                        android:background="@drawable/morado" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:text="Muy dañina"
                         android:fontFamily="@font/avenirnextcondensed"
+                        android:text="Muy dañina"
                         android:textColor="#000000"
-                        android:textSize="25dp"/>
+                        android:textSize="25dp" />
 
                 </LinearLayout>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="     "></TextView>
-            </LinearLayout>
 
 
             </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HOLA"
+                android:textSize="20dp"
+                android:textColor="#efefef"></TextView>
 
+        </LinearLayout>
 
 
     </ScrollView>
